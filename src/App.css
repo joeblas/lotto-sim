@@ -1,0 +1,63 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+  height: 90vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+ul {
+  list-style: none;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  gap: 1em;
+  /* border: 1px solid #ccc;
+  border-radius: 0.5em;
+  box-shadow: 0 0 1em #ccc; */
+
+    > :last-child {
+      color: red;
+    }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 700px;
+  
+}
+
+.card {
+  padding: 2em;
+  flex: 1;
+}
+
+
+.read-the-docs {
+  color: #888;
+}
