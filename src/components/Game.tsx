@@ -6,6 +6,7 @@ type GameProps = {
   animationProps: {
     opacity: SpringValue<number>
     transform: SpringValue<string>
+    scale: SpringValue<number>
   }
 }
 

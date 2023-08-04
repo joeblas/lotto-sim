@@ -46,8 +46,18 @@ ul {
   flex-direction: column;
 }
 
+/* Default styles */
 .card {
   padding: 1em;
+  font-size: 1rem;
+}
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 767px) {
+  .card {
+    padding: 0.5em;
+    font-size: 0.8rem;
+  }
 }
 
 .read-the-docs {

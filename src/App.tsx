@@ -14,11 +14,13 @@ function App() {
 
   const [card1Props, card1Api] = useSpring(() => ({
     opacity: 0,
+    scale: 0,
     transform: 'translateY(50px)',
   }))
 
   const [card2Props, card2Api] = useSpring(() => ({
     opacity: 0,
+    scale: 0,
     transform: 'translateY(50px)',
   }))
 
@@ -73,6 +75,7 @@ function App() {
       setGameState('finished')
       card2Api.start({
         opacity: 1,
+        scale: 1,
         transform: 'translateY(0)',
       })
     }
@@ -89,6 +92,7 @@ function App() {
       card1Api.start({
         opacity: 1,
         transform: 'translateY(0)',
+        scale: 1,
       })
     }
   }, [card1Api, ticketGenerated])
@@ -124,7 +128,7 @@ function App() {
             display: 'flex',
             flexDirection: 'column',
             gap: '1em',
-            marginTop: '1.5em',
+            marginTop: '2em',
           }}
         >
           <button onClick={handleGenerateTicket}>Generate Ticket</button>
